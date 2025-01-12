@@ -1,0 +1,16 @@
+[ libOx.so ]
+# List of selected classes
+class OxCorr
+class OxEvent
+class OxEventResults
+class OxInj
+class OxMeta
+class OxPost
+class OxProcess
+header OxCorr.h
+header OxEvent.h
+header OxEventResults.h
+header OxInj.h
+header OxMeta.h
+header OxPost.h
+header OxProcess.h

@@ -1,0 +1,144 @@
+/*****************************************************************/
+/*********                 DEFAULT STYLE                 *********/
+/*****************************************************************/
+body {
+    font-family:"Garamond", Garamond, sans-serif;
+    font-size: 13px;
+    color: rgb(255 250 229 / 100%);
+    background-color: #080808;
+    text-align: left;
+    background-image:url('./logo.gif');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-attachment:fixed;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(255 250 229 / 40%);
+    text-align: left;
+}
+
+h2 {
+    font-size: 20px;
+    color: rgb(255 250 229 / 60%);
+    text-align: left;
+}
+
+h2.on, h2.on a {
+    font-family:"Courier New", Courier New;
+    font-size: 20px;
+    color: rgb(255 250 229 / 60%);
+    text-decoration: none;
+}
+
+h2.off, h2.off a{
+    font-family:"Courier New", Courier New;
+    font-size: 9px;
+    color: rgb(255 250 229 / 60%);
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 15px;
+    text-align: left;
+}
+
+td {
+    font-size: 13px;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+    
+th {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+    
+a:link, a:visited {
+    font-size: 13px;
+    color: rgb(255 250 229 / 100%);
+    text-decoration: underline; 
+    text-align: left;
+}
+
+a:active, a:hover {
+    font-size: 13px;
+    color: #C8C8C8;
+    text-decoration: underline;
+    color: white;
+    text-align: left;
+}
+
+table.omicronindex td, table.omicronindex a{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 9px;
+}
+
+table.omicronsummary td, table.omicronsummary a{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 10px;
+}
+
+table.oxplots, table.oxplots td{
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-spacing: 0px;
+}
+
+table.oxchar{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+table.oxevents{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+table.oxevents tr:nth-child(even) {
+    background-color: rgb(255 250 229 / 30%);
+}
+
+table.oxevents th, table.oxevents td{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+body.omicron img {
+    border:2px solid;
+}
+
+h3.oxinj{
+    font-family: monospace;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 0;
+}
+
+h4.oxloudest{
+    font-family: monospace;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 0;
+}
+

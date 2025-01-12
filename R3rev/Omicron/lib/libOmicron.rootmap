@@ -1,0 +1,14 @@
+[ libOmicron.so ]
+# List of selected classes
+class Oinject
+class Omap
+class Omicron
+class Oqplane
+class Osequence
+class Otile
+header Oinject.h
+header Omap.h
+header Oomicron.h
+header Oqplane.h
+header Osequence.h
+header Otile.h

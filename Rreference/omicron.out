@@ -1,0 +1,236 @@
+
+
+##############################################################
+##############################################################
+
+   ██████╗ ███╗   ███╗██╗ ██████╗██████╗  ██████╗ ███╗   ██╗
+  ██╔═══██╗████╗ ████║██║██╔════╝██╔══██╗██╔═══██╗████╗  ██║
+  ██║   ██║██╔████╔██║██║██║     ██████╔╝██║   ██║██╔██╗ ██║
+  ██║   ██║██║╚██╔╝██║██║██║     ██╔══██╗██║   ██║██║╚██╗██║
+  ╚██████╔╝██║ ╚═╝ ██║██║╚██████╗██║  ██║╚██████╔╝██║ ╚████║
+   ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+                                                    4.1.1
+##############################################################
+##############################################################
+
+
+IO::ParseFile: Parse file ./config.txt		ok
+Omicron::ReadOptions: number of options = 43
+ffl::ffl: detect file format
+ffl::ffl: detected file format = ffl
+ffl::DefineTmpDir: working ffl file = ./myffl.ffl
+ffl::DefineTmpDir: working ffl file = ./myffl.ffl
+ffl::Reset: reset ffl
+ffl::LoadFrameFile: load FFL file
+ffl::LoadFrameFile: extract frame information
+ffl::LoadFrameFile: check frame information
+ffl::ExtractChannels: extracted information = 
+H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ 4096
+Streams::MakeDetector: this stream (H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ) is associated to detector: Hanford1 (H1)
+Sample::SetFrequencies: new native sampling frequency (4096Hz)
+Sample::SetFrequencies: new working sampling frequency (2048Hz)
+Sample::MakeSamplingFilters: building butterworth filters
+Sample::SetHighPassFrequency: building high-pass filters
+Otile::Otile: creating 4 Q-planes
+Oqplane::PrintParameters:
+	- Q                         = 5.98140
+	- Time range                = 64 s
+	- Time resolution           = 0.00098 s - 0.03125 s
+	- Frequency range           = 16.00000-658.73688 Hz
+	- Number of frequency bands = 20
+	- Frequency resolution      = 3.26857 Hz - 111.74311 Hz
+	- Number of tiles           = 501760
+	- Number of bins (internal) = 1310720
+Oqplane::PrintParameters:
+	- Q                         = 13.37481
+	- Time range                = 64 s
+	- Time resolution           = 0.00098 s - 0.06250 s
+	- Frequency range           = 16.00000-820.52890 Hz
+	- Number of frequency bands = 42
+	- Frequency resolution      = 1.57250 Hz - 73.42635 Hz
+	- Number of tiles           = 596992
+	- Number of bins (internal) = 2752512
+Oqplane::PrintParameters:
+	- Q                         = 29.90698
+	- Time range                = 64 s
+	- Time resolution           = 0.00195 s - 0.12500 s
+	- Frequency range           = 16.00000-921.77677 Hz
+	- Number of frequency bands = 96
+	- Frequency resolution      = 0.69009 Hz - 38.11278 Hz
+	- Number of tiles           = 662528
+	- Number of bins (internal) = 3145728
+Oqplane::PrintParameters:
+	- Q                         = 66.87403
+	- Time range                = 64 s
+	- Time resolution           = 0.00391 s - 0.25000 s
+	- Frequency range           = 16.00000-975.61430 Hz
+	- Number of frequency bands = 218
+	- Frequency resolution      = 0.30455 Hz - 18.22326 Hz
+	- Number of tiles           = 700416
+	- Number of bins (internal) = 3571712
+************* Spectrum::Spectrum *************
+Input data sampling frequency = 2048 Hz
+PSD size                      = 2049 points
+PSD resolution                = 0.50000 Hz
+Number of even samples        = 150
+Number of odd samples         = 149
+**********************************************
+************* Spectrum::Spectrum *************
+Input data sampling frequency = 2048 Hz
+PSD size                      = 2049 points
+PSD resolution                = 0.50000 Hz
+Number of even samples        = 150
+Number of odd samples         = 149
+**********************************************
+InjRea::InjRea: 0 injections are loaded
+
+>>>>>>>>>> (18:04:49 UTC) [+6s]: Omicron has been successfully initiated <<<<<<<<<<
+
+Omicron::InitSegments: initiate data segments...
+	- save input segments
+Osequence::SetSegments: setting new segments
+	- in: 1238166018.00000-1238166118.00000
+	- extract channels (FFL)
+ffl::ExtractChannels: extracted information = 
+H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ 4096
+	- N input segments   = 1
+	- Input livetime     = 100.00000
+Omicron::MakeDirectories: make directory structure...
+	- create channel directories
+	- open injection report file
+
+>>>>>>>>>> (18:04:50 UTC) [+7s]: Start looping over channels and chunks <<<<<<<<<<
+
+Omicron::NewChannel: load a new channel...
+	- channel H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ (1/1) is loaded
+Omicron::NewChunk: call a new chunk...
+Osequence::NewChunk: 1238166018-1238166082
+	- chunk 1238166018-1238166082 is loaded (start a new segment)
+
+>>>>>>>>>> (18:04:50 UTC) [+7s]: Processing H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ 1238166018-1238166082 <<<<<<<<<<
+
+Omicron::LoadData: load data vector...
+	- get data from frames...
+ffl::GetData: read data for H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ between 1238166018.00000 and 1238166082.00000
+ffl::GetData: 262144 samples
+	- perform software injections...
+Omicron::Condition: condition data vector...
+	- transform data vector...
+Sample::Transform: remove DC component...
+Sample::Transform: resample input data...
+Sample::Resample: apply anti-aliasing filters
+Sample::Resample: decimate time-series
+	- apply Tukey window...
+	- update spectrum 1...
+Spectrum::AddData: compute PSD
+Spectrum::ComputeMedianMean: the PSD estimation is not nominal: 30/29 subPSDs are used instead of 150/149
+	- move the data in the frequency domain...
+	- whiten chunk (1)
+	- move the data back in the time domain...
+	- update spectrum 2...
+Spectrum::AddData: compute PSD
+Spectrum::ComputeMedianMean: the PSD estimation is not nominal: 30/29 subPSDs are used instead of 150/149
+	- move the data in the frequency domain...
+	- whiten chunk (2)
+	- compute tiling power...
+Omicron::Project: project data onto the tiles...
+Otile::ProjectData: project the data on the Q planes
+Omicron::WriteOutput: write chunk output...
+	- write triggers 
+Omicron::ExtractTriggers: 13574 triggers
+Otile::SaveTriggers: saving triggers for H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ in 1238166020.00000-1238166080.00000
+Omicron::FlushTriggers
+TriggerBuffer::Flush: 13574 triggers
+	 - flushed
+Triggers::SortTriggers: sorting triggers
+	 - triggers sorted
+	 - 13574 triggers
+Omicron::WriteTriggers
+MakeTriggers::Write: 13574 triggers
+                     1 segments
+                     in ./output/H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ/H1-PEM_VAULT_MAG_1030X195Y_COIL_X_DQ_OMICRON-1238166020-60.root
+MakeTriggers::Reset: reset all
+Omicron::NewChunk: call a new chunk...
+	- chunk 1238166054-1238166118 is loaded
+
+>>>>>>>>>> (18:04:51 UTC) [+8s]: Processing H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ 1238166054-1238166118 <<<<<<<<<<
+
+Omicron::LoadData: load data vector...
+	- get data from frames...
+ffl::GetData: read data for H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ between 1238166054.00000 and 1238166118.00000
+ffl::GetData: 262144 samples
+	- perform software injections...
+Omicron::Condition: condition data vector...
+	- transform data vector...
+Sample::Transform: remove DC component...
+Sample::Transform: resample input data...
+Sample::Resample: apply anti-aliasing filters
+Sample::Resample: decimate time-series
+	- apply Tukey window...
+	- update spectrum 1...
+Spectrum::AddData: compute PSD
+Spectrum::ComputeMedianMean: the PSD estimation is not nominal: 48/46 subPSDs are used instead of 150/149
+	- move the data in the frequency domain...
+	- whiten chunk (1)
+	- move the data back in the time domain...
+	- update spectrum 2...
+Spectrum::AddData: compute PSD
+Spectrum::ComputeMedianMean: the PSD estimation is not nominal: 48/46 subPSDs are used instead of 150/149
+	- move the data in the frequency domain...
+	- whiten chunk (2)
+	- compute tiling power...
+Omicron::Project: project data onto the tiles...
+Otile::ProjectData: project the data on the Q planes
+Omicron::WriteOutput: write chunk output...
+	- write triggers 
+Omicron::ExtractTriggers: 17960 triggers
+Otile::SaveTriggers: saving triggers for H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ in 1238166080.00000-1238166116.00000
+Omicron::FlushTriggers
+TriggerBuffer::Flush: 9257 triggers
+	 - flushed
+Triggers::SortTriggers: sorting triggers
+	 - triggers sorted
+	 - 9257 triggers
+Omicron::WriteTriggers
+MakeTriggers::Write: 9257 triggers
+                     1 segments
+                     in ./output/H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ/H1-PEM_VAULT_MAG_1030X195Y_COIL_X_DQ_OMICRON-1238166080-36.root
+MakeTriggers::Reset: reset all
+Omicron::NewChunk: call a new chunk...
+Osequence::NewChunk: end of segments
+Omicron::NewChannel: load a new channel...
+	- no more channels to load
+
+>>>>>>>>>> (18:04:52 UTC) [+9s]: Omicron processing is over <<<<<<<<<<
+
+
+************* Omicron status info *************
+requested start         = 1238166018
+requested end           = 1238166118
+requested livetime      = 100 s
+number of chunks        = 2
+
+*** H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ
+number of data calls         = 2
+number of conditioning calls = 2
+number of projection calls   = 2
+number of write calls        = 2
+start_out                    = 1238166020
+end_out                      = 1238166116
+trigger livetime             = 96s (96.00000%)
+***********************************************
+
+Omicron::~Omicron
+TriggerBuffer::~TriggerBuffer
+MakeTriggers::~MakeTriggers
+Streams::~Streams
+Sample::~Sample
+Triggers::~Triggers
+Spectrum::~Spectrum
+Spectrum::~Spectrum
+ffl::~ffl
+ffl::Reset: reset ffl
+InjEct::~InjEct
+InjRea::~InjRea
+Otile::~Otile
+Osequence::~Osequence

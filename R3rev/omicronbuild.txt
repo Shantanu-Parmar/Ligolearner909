@@ -1,0 +1,12 @@
+export OMICRON_SRCDIR=$/home/shan909/Downloads/Omicron-4.1.1
+export OMICRON_INSTALLDIR=$/home/shan909/Desktop/R3rev/Omicron
+mkdir -p $/home/shan909/Downloads/Omicron-4.1.1 $/home/shan909/Desktop/R3rev/Omicron
+
+
+cd /home/shan909/Downloads/Omicron-4.1.1
+mkdir ./build/; cd ./build/
+cmake -DCMAKE_INSTALL_PREFIX=/home/shan909/Desktop/R3rev/Omicron /home/shan909/Downloads/Omicron-4.1.1
+make
+make install
+
+source $/home/shan909/Desktop/R3rev/Omicron/etc/omicron.env.sh

@@ -1,0 +1,146 @@
+<html>
+<!-- Begin header -->
+<head>
+<title>Omicron Report 1238166018-1238166118</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="icon" type="image/x-icon" href="./icon.gif" />
+<link rel="shortcut icon" type="image/x-icon" href="./icon.gif" />
+<script type="text/javascript">
+function showImage(channel, channelconv, type, timerange, format) {
+  for (var dt in timerange) {
+    var basename =
+      channelconv + "_" + type + "-" + timerange[dt];
+    document.getElementById("a_" + channelconv + "-" + timerange[dt]).href =
+      "./" + channel + "/" + basename + "." + format;
+    document.getElementById("img_" + channelconv + "-" + timerange[dt]).src =
+      "./" + channel + "/th" + basename + "." + format;
+  }
+}
+</script>
+<script type="text/javascript">
+function showSound(channel, channelconv, type, timerange) {
+  for (var dt in timerange) {
+    var basename =
+      channelconv + "_" + type + "-" + timerange[dt];
+    document.getElementById("a_" + channelconv + "-" + timerange[dt]).href =
+      "./" + channel + "/" + basename + ".wav";
+    document.getElementById("img_" + channelconv + "-" + timerange[dt]).src =
+      "./listen-" + timerange[dt] + ".gif";
+  }
+}
+</script>
+<script type="text/javascript">
+function toggle(anId) {
+  node = document.getElementById(anId);
+  if (node.style.visibility=="hidden") {
+    node.style.visibility = "visible";
+    node.style.height = "auto";
+  }
+  else {
+    node.style.visibility = "hidden";
+    node.style.height = "0";
+  }
+}
+</script>
+</head>
+<!-- End header -->
+<body>
+
+<h1>Omicron Report </h1>
+<hr />
+
+<!-- Begin summary -->
+<h2>Summary</h2>
+<table>
+  <tr><td>Omicron version:</td><td>4.1.1: <a href="https://virgo.docs.ligo.org/virgoapp/Omicron/" target="_blank">documentation</a>, <a href="https://git.ligo.org/virgo/virgoapp/Omicron" target="_blank">gitlab repository</a></td></tr>
+  <tr><td>Omicron run by:</td><td>shan909</td></tr>
+  <tr><td>Omicron processing time:</td><td>0h, 0min</td></tr>
+  <tr><td>Processing Date:</td><td>Sun Jan 12 18:04:52 2025
+ (UTC)</td></tr>
+  <tr><td>Requested start:</td><td>1238166018 &rarr; Mon Apr  1 15:00:00 2019
+ (UTC)</td></tr>
+  <tr><td>Requested stop:</td><td>1238166118 &rarr; Mon Apr  1 15:01:40 2019
+ (UTC)</td></tr>
+  <tr><td>Requested livetime:</td><td>100 sec &rarr; 0.001 days</td></tr>
+  <tr><td>Requested segments:</td><td><a href="./omicron.segments.txt">omicron.segments.txt</a></td></tr>
+  <tr><td>Number of chunks:</td><td>2</td></tr>
+  <tr><td>Number of channels:</td><td>1</td></tr>
+  <tr><td>Run in STRICT mode:</td><td>NO</td></tr>
+  <tr><td>Configuration:</td><td><a href="./omicron.parameters.txt">omicron.parameters.txt</a></td></tr>
+</table>
+<hr />
+<!-- End summary -->
+
+<!-- Begin parameters -->
+<h2>Parameters</h2>
+<table>
+  <tr><td>Timing:</td><td> chunks of 64 sec, overlapping by 4 sec</td></tr>
+  <tr><td>Sampling frequency:</td><td>2048 Hz</td></tr>
+  <tr><td>Frequency range:</td><td>16.000 &rarr; 975.614 Hz</td></tr>
+  <tr><td>Q range:</td><td>5.981 &rarr; 66.874</td></tr>
+  <tr><td>Tiling maximal mismatch:</td><td>30.000 %</td></tr>
+  <tr><td>SNR threshold (triggers):</td><td>SNR &gt; 5.000</td></tr>
+  <tr><td>Trigger clustering:</td><td>NONE</td></tr>
+</table>
+<hr />
+<!-- End parameters -->
+
+<!-- Begin injections -->
+<h2>Injections</h2>
+<h3>Software injections:</h3>
+<table>
+  <tr><td>Injection file(s):</td><td> </td></tr>
+</table>
+<hr />
+<!-- End injections -->
+
+<!-- Begin channel index -->
+<h2>Channel index</h2>
+<table class="omicronindex">
+  <tr>
+    <td><a href="#H1-PEM_VAULT_MAG_1030X195Y_COIL_X_DQ">H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<hr />
+<!-- End channel index -->
+
+<!-- Begin channel report -->
+<!-- Begin channel H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ -->
+<h2 class="on"><img src="./led-green.gif" />&nbsp;H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ <a href="javascript:void(0)" name="H1-PEM_VAULT_MAG_1030X195Y_COIL_X_DQ" onclick="toggle('id_H1-PEM_VAULT_MAG_1030X195Y_COIL_X_DQ')">[click here to expand/hide]</a></h2>
+<div class="omicronchannel" id="id_H1-PEM_VAULT_MAG_1030X195Y_COIL_X_DQ" style="visibility:visible;height:auto;">
+<h3>Processing</h3>
+  <table class="omicronsummary">
+    <tr><td>Number of calls [data/condition/projection/write]:</td><td>2/2/2/2</td></tr>
+    <tr><td>Processed livetime:</td><td>96 sec (96.000%) &rarr; 0.001 days <a href="./H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ/omicron.segments.txt">segments</a></td></tr>
+  </table>
+<h3>Output</h3>
+<table class="omicronsummary">
+  <tr>
+    <td>1238166050:</td>
+    <td><a href="./H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ/H1-PEM_VAULT_MAG_1030X195Y_COIL_X_DQ_OMICRON-1238166020-60.root">Triggers</a></td>
+  <tr>
+    <td>1238166086:</td>
+    <td><a href="./H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ/H1-PEM_VAULT_MAG_1030X195Y_COIL_X_DQ_OMICRON-1238166080-36.root">Triggers</a></td>
+</table>
+<table>
+  <tr>
+  </tr>
+</table>
+</div>
+<hr />
+<!-- End channel H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ -->
+
+<!-- End channel report -->
+
+<!-- Begin footer -->
+<table>
+  <tr><td><a href="mailto:florent.robinet@ijclab.in2p3.fr">florent.robinet@ijclab.in2p3.fr</a></td></tr>
+</table>
+<!-- End footer -->
+</body>
+</html>

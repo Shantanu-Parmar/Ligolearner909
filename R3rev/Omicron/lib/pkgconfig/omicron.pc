@@ -1,0 +1,10 @@
+prefix=/home/shan909/Desktop/R3rev/Omicron
+exec_prefix=${prefix}
+libdir=/home/shan909/Desktop/R3rev/Omicron/lib
+includedir=/home/shan909/Desktop/R3rev/Omicron/include
+
+Name: Omicron
+Description: An algorithm to detect and characterize transient events in gravitational-wave detectors
+Version: 4.1.1
+Libs: -L${libdir} -lOx -lOmicron -lOmicronUtils
+Cflags: -I${includedir}
