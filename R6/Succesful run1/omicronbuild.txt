@@ -1,0 +1,12 @@
+export OMICRON_SRCDIR=./Omicron-4.1.1
+export OMICRON_INSTALLDIR=./Omicron
+mkdir -p ./Omicron-4.1.1 ./Omicron
+
+
+cd ./Omicron-4.1.1
+mkdir ./build/; cd ./build/
+cmake -DCMAKE_INSTALL_PREFIX=/./Omicron ./Omicron-4.1.1
+make
+make install
+
+source ./Omicron/etc/omicron.env.sh

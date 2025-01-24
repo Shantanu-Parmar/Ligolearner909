@@ -1,0 +1,101 @@
+
+
+##############################################################
+##############################################################
+
+   ██████╗ ███╗   ███╗██╗ ██████╗██████╗  ██████╗ ███╗   ██╗
+  ██╔═══██╗████╗ ████║██║██╔════╝██╔══██╗██╔═══██╗████╗  ██║
+  ██║   ██║██╔████╔██║██║██║     ██████╔╝██║   ██║██╔██╗ ██║
+  ██║   ██║██║╚██╔╝██║██║██║     ██╔══██╗██║   ██║██║╚██╗██║
+  ╚██████╔╝██║ ╚═╝ ██║██║╚██████╗██║  ██║╚██████╔╝██║ ╚████║
+   ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+                                                    4.1.1
+##############################################################
+##############################################################
+
+
+IO::ParseFile: Parse file ./config.txt		ok
+Omicron::ReadOptions: number of options = 43
+ffl::ffl: detect file format
+ffl::ffl: detected file format = ffl
+ffl::DefineTmpDir: working ffl file = ./myffl.ffl
+ffl::DefineTmpDir: working ffl file = ./myffl.ffl
+ffl::Reset: reset ffl
+ffl::LoadFrameFile: load FFL file
+ffl::LoadFrameFile: extract frame information
+ffl::LoadFrameFile: check frame information
+ffl::Loadffl: FFL file ./myffl.ffl cannot be loaded
+Omicron::MakeTriggers: no channels matching H1:PEM-VAULT_MAG_1030X195Y_COIL_X_DQ --> ignore
+Omicron::MakeTriggers: the list of channels is empty
+Streams::MakeDetector: this stream (M1:MISSING) is associated to detector: UNKNOWN (00)
+Sample::SetFrequencies: new native sampling frequency (2048Hz)
+Sample::SetFrequencies: new working sampling frequency (2048Hz)
+Sample::MakeSamplingFilters: building butterworth filters
+Sample::SetHighPassFrequency: building high-pass filters
+Otile::Otile: creating 4 Q-planes
+Oqplane::PrintParameters:
+	- Q                         = 5.98140
+	- Time range                = 64 s
+	- Time resolution           = 0.00098 s - 0.03125 s
+	- Frequency range           = 16.00000-658.73688 Hz
+	- Number of frequency bands = 20
+	- Frequency resolution      = 3.26857 Hz - 111.74311 Hz
+	- Number of tiles           = 501760
+	- Number of bins (internal) = 1310720
+Oqplane::PrintParameters:
+	- Q                         = 13.37481
+	- Time range                = 64 s
+	- Time resolution           = 0.00098 s - 0.06250 s
+	- Frequency range           = 16.00000-820.52890 Hz
+	- Number of frequency bands = 42
+	- Frequency resolution      = 1.57250 Hz - 73.42635 Hz
+	- Number of tiles           = 596992
+	- Number of bins (internal) = 2752512
+Oqplane::PrintParameters:
+	- Q                         = 29.90698
+	- Time range                = 64 s
+	- Time resolution           = 0.00195 s - 0.12500 s
+	- Frequency range           = 16.00000-921.77677 Hz
+	- Number of frequency bands = 96
+	- Frequency resolution      = 0.69009 Hz - 38.11278 Hz
+	- Number of tiles           = 662528
+	- Number of bins (internal) = 3145728
+Oqplane::PrintParameters:
+	- Q                         = 66.87403
+	- Time range                = 64 s
+	- Time resolution           = 0.00391 s - 0.25000 s
+	- Frequency range           = 16.00000-975.61430 Hz
+	- Number of frequency bands = 218
+	- Frequency resolution      = 0.30455 Hz - 18.22326 Hz
+	- Number of tiles           = 700416
+	- Number of bins (internal) = 3571712
+************* Spectrum::Spectrum *************
+Input data sampling frequency = 2048 Hz
+PSD size                      = 2049 points
+PSD resolution                = 0.50000 Hz
+Number of even samples        = 150
+Number of odd samples         = 149
+**********************************************
+************* Spectrum::Spectrum *************
+Input data sampling frequency = 2048 Hz
+PSD size                      = 2049 points
+PSD resolution                = 0.50000 Hz
+Number of even samples        = 150
+Number of odd samples         = 149
+**********************************************
+InjRea::InjRea: 0 injections are loaded
+omicron: The Omicron object is corrupted.
+Omicron::~Omicron
+TriggerBuffer::~TriggerBuffer
+MakeTriggers::~MakeTriggers
+Streams::~Streams
+Sample::~Sample
+Triggers::~Triggers
+Spectrum::~Spectrum
+Spectrum::~Spectrum
+ffl::~ffl
+ffl::Reset: reset ffl
+InjEct::~InjEct
+InjRea::~InjRea
+Otile::~Otile
+Osequence::~Osequence
